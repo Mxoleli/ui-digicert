@@ -5,7 +5,6 @@ import { Page } from 'playwright';
 import { config } from '../config';
 import { loginLocators } from '../page-elements/LoginElements';
 
-
 export class LoginPage {
   constructor(private page: Page) {}
 

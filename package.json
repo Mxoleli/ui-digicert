@@ -1,0 +1,30 @@
+{
+  "name": "ui-digicert",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx cucumber-js --format html:reports/report.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Mxoleli/ui-digicert.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Mxoleli/ui-digicert/issues"
+  },
+  "homepage": "https://github.com/Mxoleli/ui-digicert#readme",
+  "devDependencies": {
+    "@cucumber/cucumber": "^11.3.0",
+    "@playwright/test": "^1.52.0",
+    "playwright": "^1.52.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.3"
+  },
+  "dependencies": {
+    "dotenv": "^16.5.0"
+  }
+}

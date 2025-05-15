@@ -1,0 +1,31 @@
+# Node.js dependencies
+node_modules/
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Optional npm cache directory
+.npm/
+
+# Environment files
+.env
+
+# Playwright test reports
+test-results/
+allure-results/
+allure-report/
+playwright-report/
+
+# OS specific
+.DS_Store
+Thumbs.db
+
+# VSCode config
+.vscode/
+
+# Compiled TypeScript
+dist/
+out/
+*.tsbuildinfo

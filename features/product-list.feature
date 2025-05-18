@@ -1,4 +1,4 @@
-Feature: Product List Page
+Feature: Product List Page Functionality
 
   Background:
     Given I am logged in

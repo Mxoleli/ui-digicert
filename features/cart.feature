@@ -1,4 +1,4 @@
-Feature: Cart Operations
+Feature: Cart Operations Functionality
 
   Background:
     Given I am logged in

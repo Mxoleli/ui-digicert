@@ -11,4 +11,8 @@ async removeProductFromCart(productName: string): Promise<void> {
   await this.page.locator(`.cart_item:has-text("${productName}")`).locator('button:has-text("Remove")').click();
 }
 
+async clickCheckout(): Promise<void> {
+  await this.page.click(ShoppingCartLocators.checkoutButton);
+}
+
 }

@@ -12,11 +12,8 @@ yarn-error.log*
 # Environment files
 .env
 
-# Playwright test reports
-test-results/
-allure-results/
-allure-report/
-playwright-report/
+# Cucumber test reports
+reports/
 
 # OS specific
 .DS_Store

@@ -38,3 +38,7 @@ Then('I should not see {string} in the cart', async function (this: PlaywrightTe
   const isListed = await this.shoppingCartPage.isProductInCart(productName);
   expect(isListed).toBe(false);
 });
+
+When('I click on the checkout button', async function (this: PlaywrightTestContext) {
+  await this.shoppingCartPage.clickCheckout();
+});

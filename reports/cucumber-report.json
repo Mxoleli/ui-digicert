@@ -14,7 +14,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 793635800
+              "duration": 701555200
             }
           },
           {
@@ -27,7 +27,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1116343100
+              "duration": 885707799
             }
           },
           {
@@ -40,7 +40,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 117775499
+              "duration": 150662999
             }
           },
           {
@@ -53,7 +53,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 7362299
+              "duration": 10844199
             }
           },
           {
@@ -61,7 +61,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 560689300
+              "duration": 522654399
             }
           }
         ],
@@ -80,7 +80,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 840368600
+              "duration": 740117800
             }
           },
           {
@@ -93,7 +93,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 861296100
+              "duration": 834882999
             }
           },
           {
@@ -106,7 +106,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 123875900
+              "duration": 124968100
             }
           },
           {
@@ -119,7 +119,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 8154499
+              "duration": 4972200
             }
           },
           {
@@ -127,7 +127,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 594947100
+              "duration": 601866000
             }
           }
         ],
@@ -141,5 +141,122 @@
     "name": "Login functionality",
     "tags": [],
     "uri": "features\\login.feature"
+  },
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "product-list-page;verify-product-list-page-loads-correctly",
+        "keyword": "Scenario",
+        "line": 6,
+        "name": "Verify product list page loads correctly",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 822518600
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "I am logged in",
+            "match": {
+              "location": "features\\step-definitions\\product-list.steps.ts:8"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 990399599
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 7,
+            "name": "I should see the product list loaded with an app logo \"Swag Labs\"",
+            "match": {
+              "location": "features\\step-definitions\\product-list.steps.ts:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 25156399
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 586623099
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "product-list-page;validate-the-number-of-products-displayed",
+        "keyword": "Scenario",
+        "line": 9,
+        "name": "Validate the number of products displayed",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 722992600
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "I am logged in",
+            "match": {
+              "location": "features\\step-definitions\\product-list.steps.ts:8"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1070919499
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 10,
+            "name": "I should see exactly 6 products displayed",
+            "match": {
+              "location": "features\\step-definitions\\product-list.steps.ts:20"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3956999
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 543130300
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "product-list-page",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Product List Page",
+    "tags": [],
+    "uri": "features\\product-list.feature"
   }
 ]

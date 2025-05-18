@@ -2,7 +2,7 @@ import { Given, When, Then } from '@cucumber/cucumber';
 import { expect } from '@playwright/test';
 import { PlaywrightTestContext } from '../../support/context';
 import { config } from '../../config';
-import { LoginPage } from '../../pages/LoginPage';
+import { LoginPage } from '../../pages/Login-page';
 
 Given('I am on the login page', async function (this: PlaywrightTestContext) {
   this.loginPage = new LoginPage(this.page);

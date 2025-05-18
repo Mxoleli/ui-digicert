@@ -2,7 +2,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 This repository contains tests and test automation framework written with TypeScript, Playwright and CucumberJs.
-🧠 Tech Stack
+## 🧠 Tech Stack
 Playwright
 
 Cucumber.js 
@@ -24,11 +24,11 @@ GitHub Actions – CI/CD pipeline
    npm install
    ```
 
-🚀 How to Run Tests
+## 🚀 How to Run Tests
    ```shell
    npm run test
    ```
-📊 HTML Test Reports
+## 📊 HTML Test Reports
    ```shell
    npm run report
    ```

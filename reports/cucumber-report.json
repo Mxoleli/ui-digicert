@@ -14,7 +14,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 769912100
+              "duration": 793635800
             }
           },
           {
@@ -27,7 +27,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1072686299
+              "duration": 1116343100
             }
           },
           {
@@ -40,7 +40,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 158170900
+              "duration": 117775499
             }
           },
           {
@@ -49,11 +49,11 @@
             "line": 6,
             "name": "I should see the dashboard",
             "match": {
-              "location": "features\\step-definitions\\login.steps.ts:16"
+              "location": "features\\step-definitions\\login.steps.ts:20"
             },
             "result": {
               "status": "passed",
-              "duration": 6418200
+              "duration": 7362299
             }
           },
           {
@@ -61,7 +61,73 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 619112499
+              "duration": 560689300
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "login-functionality;unsuccessful-login",
+        "keyword": "Scenario",
+        "line": 8,
+        "name": "Unsuccessful login",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 840368600
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 9,
+            "name": "I am on the login page",
+            "match": {
+              "location": "features\\step-definitions\\login.steps.ts:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 861296100
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 10,
+            "name": "I login with invalid credentials",
+            "match": {
+              "location": "features\\step-definitions\\login.steps.ts:16"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 123875900
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 11,
+            "name": "I should see an error message",
+            "match": {
+              "location": "features\\step-definitions\\login.steps.ts:25"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 8154499
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 594947100
             }
           }
         ],

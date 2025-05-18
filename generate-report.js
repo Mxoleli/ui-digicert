@@ -6,7 +6,7 @@ reporter.generate({
   metadata: {
     browser: {
       name: 'chrome',
-      version: '120'
+      version: 'latest'
     },
     platform: {
       name: 'windows',

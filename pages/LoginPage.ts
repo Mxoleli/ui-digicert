@@ -20,6 +20,9 @@ export class LoginPage {
 
   async isDashboardVisible(): Promise<boolean> {
     return this.page.isVisible(loginLocators.dashboard);
-    
+  }
+
+  async isErrorMessageVisible(): Promise<boolean> {
+    return this.page.isVisible(loginLocators.incorrectCredentialsMessage);
   }
 }

@@ -3,5 +3,5 @@ export const loginLocators ={
   passwordTxt: '#password',
   loginBtn: '#login-button',
   dashboard: '//div[@class="app_logo"]',
-  errormessage: '//h3[@data-test="error"]'
+  incorrectCredentialsMessage: '//h3[@data-test="error"]'
 };

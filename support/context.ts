@@ -2,6 +2,7 @@ import { World, setWorldConstructor } from '@cucumber/cucumber';
 import { Browser, BrowserContext, Page, chromium } from 'playwright';
 import { LoginPage } from '../pages/Login-page';
 import { ProductListPage } from '../pages/Product-list-page';
+import { ShoppingCartPage } from '../pages/Cart-page';
 
 export class PlaywrightTestContext extends World {
   browser!: Browser;
@@ -9,6 +10,7 @@ export class PlaywrightTestContext extends World {
   page!: Page;
   loginPage!: LoginPage;
   productListPage!: ProductListPage;
+  shoppingCartPage!: ShoppingCartPage;
 
   constructor(options: any) {
     super(options);

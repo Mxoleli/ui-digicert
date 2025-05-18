@@ -16,4 +16,15 @@ export class ProductListPage {
   async getProductCount(): Promise<number> {
     return await this.page.locator(ProductListLocators.productItem).count();
   }
+
+  //Add product to cart functionality 
+  async addProductToCart(): Promise<void> {
+  await this.page.locator(ProductListLocators.addToCartButton).click();
+}
+
+async goToCart(): Promise<void> {
+  await this.page.click(ProductListLocators.shoppingCartLink);
+  await expect(this.page.locator(ProductListLocators.iten4TittleLinkName)).toBeVisible();
+}
+
 }

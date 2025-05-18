@@ -4,6 +4,201 @@
     "elements": [
       {
         "description": "",
+        "id": "cart-operations;add-a-product-to-the-cart-and-verify-it's-listed",
+        "keyword": "Scenario",
+        "line": 7,
+        "name": "Add a product to the cart and verify it's listed",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 748371700
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "I am logged in",
+            "match": {
+              "location": "features\\step-definitions\\product-list.steps.ts:8"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1126963400
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 5,
+            "name": "I am on the product list page",
+            "match": {
+              "location": "features\\step-definitions\\cart.steps.ts:9"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 18942399
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 8,
+            "name": "I add the product to the cart",
+            "match": {
+              "location": "features\\step-definitions\\cart.steps.ts:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 82254200
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 9,
+            "name": "I navigate to the cart",
+            "match": {
+              "location": "features\\step-definitions\\cart.steps.ts:18"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 48397100
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 10,
+            "name": "I should see \"Sauce Labs Backpack\" listed in the cart",
+            "match": {
+              "location": "features\\step-definitions\\cart.steps.ts:23"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 7846599
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 660966200
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "cart-operations;remove-the-product-from-the-cart-and-validate",
+        "keyword": "Scenario",
+        "line": 12,
+        "name": "Remove the product from the cart and validate",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 728206900
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "I am logged in",
+            "match": {
+              "location": "features\\step-definitions\\product-list.steps.ts:8"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1197622500
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 5,
+            "name": "I am on the product list page",
+            "match": {
+              "location": "features\\step-definitions\\cart.steps.ts:9"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 6613299
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 13,
+            "name": "the product \"Sauce Labs Backpack\" is already in the cart",
+            "match": {
+              "location": "features\\step-definitions\\cart.steps.ts:28"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 109281100
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 14,
+            "name": "I remove the product \"Sauce Labs Backpack\" from the cart",
+            "match": {
+              "location": "features\\step-definitions\\cart.steps.ts:35"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 33816000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 15,
+            "name": "I should not see \"Sauce Labs Backpack\" in the cart",
+            "match": {
+              "location": "features\\step-definitions\\cart.steps.ts:39"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4474799
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 555453099
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "cart-operations",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Cart Operations",
+    "tags": [],
+    "uri": "features\\cart.feature"
+  },
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
         "id": "login-functionality;successful-login",
         "keyword": "Scenario",
         "line": 3,
@@ -14,7 +209,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 701555200
+              "duration": 784678899
             }
           },
           {
@@ -27,7 +222,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 885707799
+              "duration": 884058300
             }
           },
           {
@@ -40,7 +235,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 150662999
+              "duration": 151122999
             }
           },
           {
@@ -53,7 +248,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 10844199
+              "duration": 4389999
             }
           },
           {
@@ -61,7 +256,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 522654399
+              "duration": 674912300
             }
           }
         ],
@@ -80,7 +275,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 740117800
+              "duration": 869880800
             }
           },
           {
@@ -93,7 +288,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 834882999
+              "duration": 837216599
             }
           },
           {
@@ -106,7 +301,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 124968100
+              "duration": 100250500
             }
           },
           {
@@ -119,7 +314,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 4972200
+              "duration": 3869300
             }
           },
           {
@@ -127,7 +322,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 601866000
+              "duration": 511734000
             }
           }
         ],
@@ -157,7 +352,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 822518600
+              "duration": 746805699
             }
           },
           {
@@ -170,7 +365,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 990399599
+              "duration": 987118800
             }
           },
           {
@@ -183,7 +378,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 25156399
+              "duration": 15438799
             }
           },
           {
@@ -191,7 +386,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 586623099
+              "duration": 592356100
             }
           }
         ],
@@ -210,7 +405,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 722992600
+              "duration": 668058699
             }
           },
           {
@@ -223,7 +418,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1070919499
+              "duration": 1014582500
             }
           },
           {
@@ -236,7 +431,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 3956999
+              "duration": 4959299
             }
           },
           {
@@ -244,7 +439,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 543130300
+              "duration": 585355200
             }
           }
         ],

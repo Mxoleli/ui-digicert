@@ -1,5 +1,10 @@
 import dotenv from 'dotenv';
-dotenv.config();
+
+// Load .env file locally only if not in CI
+if (!process.env.CI) {
+  dotenv.config();
+}
+
 function getEnvVar(name: string): string {
   const value = process.env[name];
   if (!value) {

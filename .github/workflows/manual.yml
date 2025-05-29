@@ -13,9 +13,10 @@ jobs:
     runs-on: ubuntu-latest
 
     env:
-      TEST_BASE_URL: ${{ secrets.TEST_BASE_URL }}
-      TEST_USERNAME: ${{ secrets.TEST_USERNAME }}
-      TEST_PASSWORD: ${{ secrets.TEST_PASSWORD }}
+       TEST_BASE_URL: ${{ secrets.TEST_BASE_URL }}
+       TEST_USERNAME: ${{ secrets.TEST_USERNAME }}
+       TEST_LOCKED_OUT_USERNAME: ${{ secrets.TEST_LOCKED_OUT_USERNAME }}
+       TEST_PASSWORD: ${{ secrets.TEST_PASSWORD }}
 
     steps:
       - name: Checkout code

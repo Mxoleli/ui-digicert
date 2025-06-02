@@ -3,11 +3,10 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-"scripts": {
-  "test": "cucumber-js --require-module ts-node/register --require features/step-definitions/**/*.ts --require support/hooks.ts --format json:./reports/cucumber-report.json",
-  "report": "node generate-report.js"
-},
-
+  "scripts": {
+    "test": "cross-env BROWSER=chromium HEADLESS=false npx cucumber-js --require-module ts-node/register --require features/step-definitions/**/*.ts --require support/hooks.ts --format json:./reports/cucumber-report.json",
+    "report": "node generate-report.js"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Mxoleli/ui-digicert.git"
@@ -22,6 +21,7 @@
   "devDependencies": {
     "@cucumber/cucumber": "^11.3.0",
     "@playwright/test": "^1.52.0",
+    "cross-env": "^7.0.3",
     "multiple-cucumber-html-reporter": "^3.9.2",
     "playwright": "^1.52.0",
     "ts-node": "^10.9.2",

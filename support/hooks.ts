@@ -1,17 +1,22 @@
 import { Before, After, Status } from '@cucumber/cucumber';
 import { PlaywrightTestContext } from './context';
+import { chromium, firefox, webkit, Browser, Page, BrowserContext } from 'playwright';
 import fs from 'fs';
 import path from 'path';
 
-import { chromium } from 'playwright';
-
 Before(async function (this: PlaywrightTestContext) {
-  this.browser = await chromium.launch({ headless: true });
+  const browserType = process.env.BROWSER || 'chromium';
+  const headless = process.env.HEADLESS !== 'false';
+
+  const browserMap: Record<string, () => Promise<Browser>> = {
+    chromium: () => chromium.launch({ headless }),
+    firefox: () => firefox.launch({ headless }),
+    webkit: () => webkit.launch({ headless }),
+  };
+  this.browser = await browserMap[browserType]();
   this.context = await this.browser.newContext();
   this.page = await this.context.newPage();
-  
 });
-
 After(async function (this: PlaywrightTestContext, scenario) {
   if (scenario.result?.status === Status.FAILED) {
     const timestamp = new Date().toISOString().replace(/[:.]/g, '-');

@@ -50,3 +50,10 @@ jobs:
         with:
           name: screenshots
           path: reports/screenshots/
+          
+      - name: Add report link to GitHub Actions summary
+        run: |
+          echo "✅ Tests completed!" >> $GITHUB_STEP_SUMMARY
+          echo "📄 **Download the Cucumber HTML Report artifact from the Artifacts section below** ⬇️" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "[Or click here to go to the Action Run](${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }})" >> $GITHUB_STEP_SUMMARY

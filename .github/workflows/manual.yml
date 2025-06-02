@@ -43,9 +43,6 @@ jobs:
         with:
           name: cucumber-html-report
           path: reports/html/
-          
-      - name: Add link to job summary
-        run: echo "🧪 [View Test Report](./artifacts/cucumber-html-report/index.html)" >> $GITHUB_STEP_SUMMARY
 
       - name: Upload Screenshots (on failure)
         if: failure()
@@ -53,3 +50,8 @@ jobs:
         with:
           name: screenshots
           path: reports/screenshots/
+          
+      - name: Add report link to GitHub Actions summary
+        run: |
+          echo "✅ Tests completed!" >> $GITHUB_STEP_SUMMARY
+          echo "📄 [Download HTML Report Artifact](https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }})" >> $GITHUB_STEP_SUMMARY

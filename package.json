@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "cross-env BROWSER=chromium HEADLESS=false npx cucumber-js --require-module ts-node/register --require features/step-definitions/**/*.ts --require support/hooks.ts --format json:./reports/cucumber-report.json",
+    "test": "cross-env BROWSER=chromium HEADLESS=true npx cucumber-js --require-module ts-node/register --require features/step-definitions/**/*.ts --require support/hooks.ts --format json:./reports/cucumber-report.json",
     "report": "node generate-report.js"
   },
   "repository": {
